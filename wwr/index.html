@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<link type="text/css" rel="stylesheet" href="index.css" />
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Page</title>
 </head>
-    <body>
-        <header>Header</header>
-        <div class="image">Image</div>
-            <img src:
-        <div class="title">
-            <h1>Title</h1>
-        </div>
-        <div class="table-of-contents">Table of Contents</div>
-        <!-- Main Content -->
-        <main>Body</main>
-        <!-- Footer Area -->
-        <footer>Footer</footer>
-    </body>
+<body class='body'>
+    
+    <button id="click-me-btn">Click Me!</button>
+    
+    <script>
+        const el = document.getElementById("click-me-btn");
+        el.onclick = function (){
+            document.body.style.backgroundColor = "black";
+        }
+    </script>
+</body>
 </html>
