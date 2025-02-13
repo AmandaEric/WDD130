@@ -1,72 +1,142 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 5;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
     gap: 5px;
 }
+
 body > * {
-    padding:10px;
+    padding: 10px;
 }
-header{ 
+
+/* Header Section */
+header { 
+    font-size: 40px;
+    text-align: center;
     width: 100%; 
-    background-color:#157A6E  ;
+    background-color: #157A6E;
     height: 75px;
     grid-row: 1;
     grid-column: 1 / span 3;
 }
+
+/* Image Banner */
 .image {
-  grid-row: 3; 
-  grid-column: 1/ span 3;      
+    grid-row: 3; 
+    grid-column: 1 / span 3;      
 }
 
 .image img {
-  display: block; 
-    width: 100%;     
-  height: auto;        
+    text-align: center;
+    display: block; 
+    width: 90%;     
+    height: auto;     
+    border: 10px solid forestgreen;
 }
 
-.table-of-contents{
-    background-color: pink;
+/* Navigation or Table of Contents */
+.table-of-contents {
+    background-color: springgreen;
     grid-row: 2;
     grid-column: 1 / span 3;
 }
-.title{
+
+/* Title Section */
+.title {
+    text-align: center;
     background-color: springgreen;
     grid-row: 4;
     grid-column: 1 / span 3;
 }
-.Body1{
+
+/* Three Content Sections */
+.Body1, .Body2, .Body3 {
     width: 100%;
     height: 250px;
     background-color: forestgreen;
+}
+
+.Body1 {
     grid-row: 5;
     grid-column: 1 / 2;
 }
-.Body2{
-    width: 100%;
-    height: 250px;
-    background-color: forestgreen;
+
+.Body2 {
     grid-row: 5;
     grid-column: 2 / 3;
 }
-.Body3{
-    width: 100%;
-    height: 250px;
-    background-color: forestgreen;
+
+.Body3 {
     grid-row: 5;
-    grid-column: span 3;
+    grid-column: 3 / 4;
 }
-.joinus{
-    background-color: #FF6B35;
-    width: 160%;
+
+/* Section with Overlay Box */
+.body2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    background-color: grey;
     height: 600px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     grid-row: 6;
-    grid-column: 1 / 2}
-footer{
+    grid-column: 1 / span 3;
+}
+
+/* Main Content Area */
+.team {
+    width: 90%;
+    height: 80%;
+    grid-column: 1 / span 2; 
+    background-color: white;
+    border: 5px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Floating Join Us Box */
+.joinus {
+    background-color: #4E4E4E; 
+    color: white;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.joinus h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.joinus p {
+    font-size: 14px;
+}
+
+.joinus button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
     width: 100%;
     height: 100px;
     background-color: lightgray;
     grid-row: 7;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 3; 
 }
+
+
+
