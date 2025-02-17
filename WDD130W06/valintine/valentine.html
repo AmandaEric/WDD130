@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100..900&family=Mouse+Memoirs&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="envelope">
+        <div class="triangle"></div>
+        <div class="box" alt="box"></div>
+        <button class="send-button">Open Me</button>
+    </div>
+    <div class="letter" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+        Dear Love,  
+        Hey Best Friend!        
+        Happy Valentine’s Day! ❤️   
+        I just wanted to take a moment to tell you how much you mean to me. You’re the peanut butter to my jelly, the mac to my cheese, and honestly, life just isn’t the same without you around. I miss you so much!  
+        Since I can’t be there in person, I made this card just for you—so, if you ever need a reminder of how amazing you are, just look at this and pretend I’m giving you the biggest bear hug ever!  
+        Also, because I know we both appreciate a good joke, here’s one for you:  
+        Hope you have an amazing day filled with love, laughter, and maybe a little bit of chocolate (or a lot, I won’t judge). Can’t wait to see you soon!  
+        Love you lots,  
+        Amanda Panda  
+    </div>
+
+    <script>
+        document.querySelector(".send-button").addEventListener("click", function() {
+            let letter = document.querySelector(".letter");
+            letter.style.display = "block";
+            setTimeout(() => {
+                letter.style.opacity = "1";
+            }, 10);
+        });
+    </script>
+</body>
+
+    
+</body>
+</html>

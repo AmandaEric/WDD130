@@ -1,9 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lexend:wght@100..900&family=Mouse+Memoirs&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --header-font: "Bebas Neue";
+    --table-of-contents-font: "Bebas Neue";
+    --body-font: Lexend, "Zilla Slab", Roboto;
+    --Body1-font: "Zilla Slab", serif; 
+    --Body2-font: "Zilla Slab", serif; 
+    --Body3-font: "Zilla Slab", serif; 
+    --footer-font: Lexend, "Zilla Slab", Roboto;
+}
 body {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto;
-    gap: 5px;
+    gap: 5px; 
+    font-family: var(--body-font);
 }
 
 body > * {
@@ -11,7 +23,9 @@ body > * {
 }
 
 /* Header Section */
-header { 
+header {
+    font-family: var(--header-font);
+    border: 10px solid #FF6B35;
     font-size: 40px;
     text-align: center;
     width: 100%; 
@@ -19,7 +33,7 @@ header {
     height: 75px;
     grid-row: 1;
     grid-column: 1 / span 3;
-}
+}   
 
 /* Image Banner */
 .image {
@@ -30,13 +44,15 @@ header {
 .image img {
     text-align: center;
     display: block; 
-    width: 90%;     
+    width: 100%;     
     height: auto;     
     border: 10px solid forestgreen;
 }
 
 /* Navigation or Table of Contents */
 .table-of-contents {
+    color: #004E89;
+    font-family: var(--table-of-contents-font);
     background-color: springgreen;
     grid-row: 2;
     grid-column: 1 / span 3;
@@ -45,6 +61,7 @@ header {
 /* Title Section */
 .title {
     text-align: center;
+    color: #004E89;
     background-color: springgreen;
     grid-row: 4;
     grid-column: 1 / span 3;
@@ -55,19 +72,29 @@ header {
     width: 100%;
     height: 250px;
     background-color: forestgreen;
+    color: #004E89;
 }
 
 .Body1 {
+    font-family: var(--Body1-font);
+    border: 5px solid #FF6B35;
+    font-size: 45px;
     grid-row: 5;
     grid-column: 1 / 2;
 }
 
 .Body2 {
+    font-family: var(--Body2-font);
+    border: 5px solid #FF6B35;
+    font-size: 45px;
     grid-row: 5;
     grid-column: 2 / 3;
 }
 
 .Body3 {
+    font-family: var(--Body3-font);
+    border: 5px solid #FF6B35;
+    font-size: 45px;
     grid-row: 5;
     grid-column: 3 / 4;
 }
@@ -97,6 +124,15 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden; 
+}
+
+.team img {
+    width: 50cm;
+    max-width: 100%; /* Ensures the image scales within its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra spacing below image */
+    border: 20px solid #004E89;
 }
 
 /* Floating Join Us Box */
@@ -104,13 +140,15 @@ header {
     background-color: #4E4E4E; 
     color: white;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     height: auto;
     position: absolute;
     right: 10%;
     bottom: 10%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 5px solid #FF6B35; 
 }
+
 
 .joinus h2 {
     margin: 0;
@@ -122,7 +160,7 @@ header {
 }
 
 .joinus button {
-    background-color: white;
+    background-color: #FF6B35;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -131,6 +169,7 @@ header {
 
 /* Footer */
 footer {
+    font-family: var(--footer-font);
     width: 100%;
     height: 100px;
     background-color: lightgray;
