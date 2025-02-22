@@ -1,0 +1,48 @@
+body{
+/* display: flex; */
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+border-width: 20cm;
+border-color: white;
+height:200px;
+width:fit-content;
+}
+
+.tart{
+text-align: center;
+font-size: 70px;
+letter-spacing: 10px;
+font-weight:700;
+color: black;
+grid-column: 1 / span 2;
+grid-row: 1;
+z-index: 3}
+img{
+width: 100%;
+height: 100%;
+grid-column: 1;
+grid-row: 1 / span 3;
+z-index: 1;
+min-width:200px;
+min-height:200px;
+}
+.box2{
+width: 100%;
+height: 100%;
+grid-column: 2;
+grid-row: 1 / span 3;
+background-color: grey;
+z-index: 2;
+min-width: 200px;
+min-height:200px;
+}
+.cherries{
+text-align: center;
+font-size: 40px;
+letter-spacing: 15px;
+font-weight: 800;
+color:rgb(127, 11, 11);
+grid-column: 2;
+grid-row: 3;
+z-index: 4;}

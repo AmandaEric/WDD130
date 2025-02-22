@@ -50,13 +50,15 @@ header {
 }
 
 /* Navigation or Table of Contents */
+
 .table-of-contents {
     color: #004E89;
     font-family: var(--table-of-contents-font);
-    background-color: springgreen;
+    background-color: #00ff7f;
     grid-row: 2;
     grid-column: 1 / span 3;
 }
+
 
 /* Title Section */
 .title {
@@ -176,6 +178,7 @@ footer {
     grid-row: 7;
     grid-column: 1 / span 3; 
 }
+
 
 
 

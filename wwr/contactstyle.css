@@ -1,0 +1,73 @@
+header {
+  width: 300px;
+  height: 100px;
+  color: white;
+  background-color: #157A6E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family:Bebas Neue;
+  font-size: 40px;
+  padding: 1cm;
+  border: 1cm solid #00ff7f;
+}
+body {
+  background-color: #00ff7f; 
+  background-size: cover;
+}
+h1 {
+  width: 600px;
+  height: 100px;
+  color: white;
+  background-color: #157A6E;
+  border: 15px solid #FF6B35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family:Bebas Neue;
+  font-size: 40px;
+  padding: 1cm;
+}
+.email{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+
+.phone{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+.hours{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+.locations{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+nav {
+  background-color: rgb(150, 149, 143);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  border: 15px solid #00ff7f;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 130px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: white;
+  background-color: #FF6B35;
+}
