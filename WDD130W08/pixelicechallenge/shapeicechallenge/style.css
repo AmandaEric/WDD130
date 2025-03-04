@@ -1,0 +1,88 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.circle {
+  display: flex; /* Add flex to center content */
+  text-align: center;
+  grid-row: 1;
+  grid-column: 1;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border: 5px solid blue;
+  background-color: lightblue;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+}
+
+.triangle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-row: 1;
+  grid-column: 2;
+  width: 0;
+  height: 0;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-bottom: 140px solid green;
+  position: relative;
+  overflow: visible;
+}
+
+.triangle {
+  display: flex;
+  text-align: center;
+  width: 0;
+  height: 0;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-bottom: 130px solid lightgreen;
+  position: relative;
+  top: 135px;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle span {
+  position: absolute; /* Position text inside the triangle */
+  top: 50%; /* Move text vertically in the middle */
+  left: 50%; /* Move text horizontally in the middle */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  text-align: center;
+  width: 100%; /* Make sure text spans the whole width */
+}
+
+.square {
+  display: flex; /* Add flex to center content */
+  text-align: center;
+  grid-row: 1;
+  grid-column: 3;
+  border-width: 10px;
+  height: 150px;
+  width: 150px;
+  border: 5px solid rgb(255, 0, 102);
+  background-color: lightpink;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+}
+
+.rectangle {
+  display: flex; /* Add flex to center content */
+  width: 500px;
+  height: 150px;
+  grid-row: 2;
+  grid-column: 1 / 4; /* Make sure this spans across 3 columns */
+  text-align: center;
+  border: 5px solid rgb(255, 217, 0);
+  background-color: rgba(255, 255, 182, 0.906);
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  min-height: 150px; /* Prevent collapsing */
+}
+

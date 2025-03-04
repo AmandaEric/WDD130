@@ -1,192 +1,27 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lexend:wght@100..900&family=Mouse+Memoirs&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-:root {
-    --header-font: "Bebas Neue";
-    --table-of-contents-font: "Bebas Neue";
-    --body-font: Lexend, "Zilla Slab", Roboto;
-    --Body1-font: "Zilla Slab", serif; 
-    --Body2-font: "Zilla Slab", serif; 
-    --Body3-font: "Zilla Slab", serif; 
-    --footer-font: Lexend, "Zilla Slab", Roboto;
+#background {
+    height: 725px;
 }
-body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    gap: 5px; 
-    font-family: var(--body-font);
+body{
+background-color: #157A6E;}
+
+header{
+background-color: rgb(150, 149, 143);
 }
 
-body > * {
-    padding: 10px;
-}
+nav a:hover{
+background-color: #FF6B35;}
 
-/* Header Section */
-header {
-    font-family: var(--header-font);
-    border: 10px solid #FF6B35;
-    font-size: 40px;
-    text-align: center;
-    width: 100%; 
-    background-color: #157A6E;
-    height: 75px;
-    grid-row: 1;
-    grid-column: 1 / span 3;
-}   
+.book, .join{
+background-color: #157A6E;}
 
-/* Image Banner */
-.image {
-    grid-row: 3; 
-    grid-column: 1 / span 3;      
-}
+.book:hover, .join:hover{
+background-color: #FF6B35;}
 
-.image img {
-    text-align: center;
-    display: block; 
-    width: 100%;     
-    height: auto;     
-    border: 10px solid forestgreen;
-}
+#background{
+background-color: #004E89;}
 
-/* Navigation or Table of Contents */
-.navbar {
-    width: auto;
-    position: relative;
-    display: inline-block;
-    background-color: #00ff7f;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-}
-.table-of-contents {
-    color: #004E89;
-    font-family: var(--table-of-contents-font);
-    background-color: #00ff7f;
-    grid-row: 2;
-    grid-column: 1 / span 3;
-}
+.msg{
+background-color: #004E89;}
 
-/* Title Section */
-.title {
-    text-align: center;
-    color: #004E89;
-    background-color: springgreen;
-    grid-row: 4;
-    grid-column: 1 / span 3;
-}
-
-/* Three Content Sections */
-.Body1, .Body2, .Body3 {
-    width: 100%;
-    height: 250px;
-    background-color: forestgreen;
-    color: #004E89;
-}
-
-.Body1 {
-    font-family: var(--Body1-font);
-    border: 5px solid #FF6B35;
-    font-size: 45px;
-    grid-row: 5;
-    grid-column: 1 / 2;
-}
-
-.Body2 {
-    font-family: var(--Body2-font);
-    border: 5px solid #FF6B35;
-    font-size: 45px;
-    grid-row: 5;
-    grid-column: 2 / 3;
-}
-
-.Body3 {
-    font-family: var(--Body3-font);
-    border: 5px solid #FF6B35;
-    font-size: 45px;
-    grid-row: 5;
-    grid-column: 3 / 4;
-}
-
-/* Section with Overlay Box */
-.body2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto;
-    background-color: grey;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    grid-row: 6;
-    grid-column: 1 / span 3;
-}
-
-/* Main Content Area */
-.team {
-    width: 90%;
-    height: 80%;
-    grid-column: 1 / span 2; 
-    background-color: white;
-    border: 5px solid grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden; 
-}
-
-.team img {
-    width: 50cm;
-    max-width: 100%; /* Ensures the image scales within its container */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes extra spacing below image */
-    border: 20px solid #004E89;
-}
-
-/* Floating Join Us Box */
-.joinus {
-    background-color: #4E4E4E; 
-    color: white;
-    padding: 20px;
-    width: 400px;
-    height: auto;
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border: 5px solid #FF6B35; 
-}
-
-
-.joinus h2 {
-    margin: 0;
-    font-size: 20px;
-}
-
-.joinus p {
-    font-size: 14px;
-}
-
-.joinus button {
-    background-color: #FF6B35;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    font-family: var(--footer-font);
-    width: 100%;
-    height: 100px;
-    background-color: lightgray;
-    grid-row: 7;
-    grid-column: 1 / span 3; 
-}
-
-
-
+footer{
+background-color: rgb(150, 149, 143);}
