@@ -38,13 +38,15 @@ body {
 }
 .container {
   text-align: center;
+  justify-content: center;
 }
 
 img {
-  position: center;
+  position: flex;
   max-width: 300px;
   width: 100%;
-  padding-left: 2.5cm;
+  padding: 2.5cm;
+  border-radius: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {

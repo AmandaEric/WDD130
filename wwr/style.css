@@ -1,27 +1,70 @@
-#background {
-    height: 725px;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lexend:wght@100..900&family=Mouse+Memoirs&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+.home-title {
+    font-family: "Bebas Neue";
+    font-size: 2em;
 }
-body{
-background-color: #157A6E;}
+  body {
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 
-header{
-background-color: rgb(150, 149, 143);
+}
+h2 {
+    margin: 0;
+}
+#hero-box{
+padding: 20px;
+border: 10px solid #004E89;
 }
 
-nav a:hover{
-background-color: #FF6B35;}
-
-.book, .join{
-background-color: #157A6E;}
-
-.book:hover, .join:hover{
-background-color: #FF6B35;}
-
-#background{
-background-color: #004E89;}
-
+#hero-img{
+width: 100%;
+}
 .msg{
 background-color: #004E89;}
 
-footer{
-background-color: rgb(150, 149, 143);}
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 35px;
+}
+nav a:hover{
+background-color: #157A6E;
+}
+.logo{
+width: 80px;
+height: 80px;
+border-radius: 100%;
+}
+
+.book, .join {
+    background-color: #157A6E;;
+    color: #FF6B35;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.card-img {
+    border: 10px solid #157A6E;
+}
+main section img {
+    box-sizing: border-box;
+
+}
+header{
+background-color: rgb(150, 149, 143);
+}
+.icon{
+border-radius: 50%;
+width: 60px;
+border: 0.5mm solid #FF6B35;
+}
+.card-img{
+width: 400px;
+height: 400px;
+}
