@@ -21,13 +21,12 @@ h2 {
 padding: 20px;
 border: 10px solid #004E89;
 }
-
 #hero-img{
 width: 100%;
 }
 .msg{
-background-color: #004E89;}
-
+background-color: #004E89;
+}
 nav a {
     text-decoration: none;
     color: #fcfbfb;
@@ -42,7 +41,6 @@ width: 80px;
 height: 80px;
 border-radius: 100%;
 }
-
 .book, .join {
     background-color: #157A6E;;
     color: #FF6B35;
@@ -57,7 +55,6 @@ border-radius: 100%;
 }
 main section img {
     box-sizing: border-box;
-
 }
 header{
 background-color: rgb(150, 149, 143);
@@ -71,3 +68,100 @@ border: 0.5mm solid #FF6B35;
 width: 400px;
 height: 400px;
 }
+header {
+  width: 95%;
+  height: 100px;
+  color: white;
+  background-color: #00ff7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family:Bebas Neue;
+  font-size: 40px;
+  padding: 1cm;
+  border: 1cm solid #00ff7f;
+}
+body {
+  background-color: #00ff7f; 
+  background-size: cover;
+}
+h1 {
+  width: 600px;
+  height: 100px;
+  color: white;
+  background-color: #157A6E;
+  border: 15px solid #FF6B35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family:Bebas Neue;
+  font-size: 40px;
+  padding: 1cm;
+}
+.email{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+
+.phone{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+.hours{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+.locations{
+font-family: Lexend, "Zilla Slab", Roboto;
+font-size: 20px;
+}
+nav {
+  background-color: rgb(150, 149, 143);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  border: 15px solid #00ff7f;
+  width: 100%;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+}
+nav a {
+  padding:1em;
+  min-width: 130px;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: white;
+  background-color: #FF6B35;
+}
+#slideshow{
+background-color: #00ff7f;
+
+}
+.mySlides{
+width: auto;
+height: 400px;
+border: 5px solid #157A6E;
+margin: 10px;}
+.mySlides2{
+width: auto;
+height: 300px;
+border: 5px solid #157A6E;
+margin: 10px;}
+.mySlides3{
+width: auto;
+height: 400px;
+border: 5px solid #157A6E;
+margin: 10px;}
+h1{
+justify-content: center;}
