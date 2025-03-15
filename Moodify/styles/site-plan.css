@@ -20,7 +20,7 @@ Fonts are separated by a | */
   --headline-color-on-white: #000000;  /* headlines on a white background */ 
   --headline-color-on-color: #000000; /* headlines on a colored background */ 
   --paragraph-color-on-white: #F2C9CC; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #F2BEA0; /* paragraph text on a colored background */ 
   --paragraph-background-color: #f8ecdc62  ;
   --nav-link-color:#F2BEA0;
   --nav-background-color: #F2D5F2;
@@ -32,7 +32,7 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  background-color: #white;
+  background-color: white;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4em;

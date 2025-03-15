@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
+    <form>
         <h1>Login</h1>
-        <input class="userlogin" type="text" placeholder="Username">
-        <input class="userlogin" type"Password" placeholder="Password">
-        <button>Login</button>
-        <!-- <script>
+        <input class="userlogin" type="text" placeholder="Username"/>
+        <input class="userlogin" type"Password" placeholder="Password"/>
+        <button class="submit" type="submit">Login</button>
+    </form>
+    <script>
         const form = document.querySelector("form");
         form.addEventListener("submit", (e) => {
-            e.preventDefalt();
+        e.preventDefault();
+
+        const username = document.queryselector("#Username").value;
+        const password = document.queryselector("#Password").value;
         });
-        </script> -->
-    </div>
+
+</script>
 </body>
 </html>

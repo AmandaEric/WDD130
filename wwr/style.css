@@ -3,6 +3,9 @@
     font-family: "Bebas Neue";
     font-size: 2em;
 }
+#background{
+height: 725px;
+}
 body {
     background-color: #fcfbfb;
     font-family: Raleway, Arial, sans-serif;
@@ -17,12 +20,15 @@ body {
 h2 {
     margin: 0;
 }
+#hero
 #hero-box{
+width: 100%;
 padding: 20px;
 border: 10px solid #004E89;
 }
 #hero-img{
-width: 100%;
+  display: flex;
+  width: 100%;
 }
 .msg{
 background-color: #004E89;
@@ -35,6 +41,7 @@ nav a {
 }
 nav a:hover{
 background-color: #157A6E;
+color: white;
 }
 .logo{
 width: 80px;
@@ -58,10 +65,11 @@ main section img {
 }
 header{
 background-color: rgb(150, 149, 143);
+width: 100px;
 }
 .icon{
 border-radius: 50%;
-width: 60px;
+width: 80px;
 border: 0.5mm solid #FF6B35;
 }
 .card-img{
@@ -72,7 +80,7 @@ header {
   width: 95%;
   height: 100px;
   color: white;
-  background-color: #00ff7f;
+  background-color: rgb(150, 149, 143);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +88,7 @@ header {
   font-family:Bebas Neue;
   font-size: 40px;
   padding: 1cm;
-  border: 1cm solid #00ff7f;
+  
 }
 body {
   background-color: #00ff7f; 
@@ -119,24 +127,22 @@ font-size: 20px;
 }
 nav {
   background-color: rgb(150, 149, 143);
-  line-height: 3em;
+  /* line-height: 3em; */
   text-align: center;
   font-size: 1.2em;
-  border: 15px solid #00ff7f;
+  /* border: 15px solid #00ff7f; */
   width: 100%;
 }
 nav  {
   list-style-type: none;
   display: flex;
-  width: 100%;
+  /* width: 100%; */
 }
 nav a {
-  padding:1em;
-  min-width: 130px;
-  width: 100%;
-  text-decoration: none;
-  padding: 10px;
-}
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+} 
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
@@ -165,3 +171,31 @@ border: 5px solid #157A6E;
 margin: 10px;}
 h1{
 justify-content: center;}
+ 
+footer p a:hover {
+    text-decoration: underline;
+}    
+footer p {
+    font-size: 1.2em;
+  
+} 
+footer{
+color: white;
+background-color: #157A6E;
+display: flex;
+flex-direction: row;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
