@@ -1,0 +1,173 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#background{
+height: 725px;
+}
+body {
+    background-color: #fcfbfb;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    align-items: center; 
+    text-align: center; 
+}
+header {
+    width: 95%;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: Bebas Neue;
+    font-size: 20px;
+    padding: 1cm;
+}
+footer p a:hover {
+    text-decoration: underline;
+}    
+footer p {
+    font-size: 1.2em;
+  
+} 
+footer{
+color: black;
+background-color: white;
+display: flex;
+flex-direction: row;
+}
+nav {
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+  width: span;
+}
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+} 
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: white;
+    background-color:#BAD9D3;
+}
+.logo{ 
+width: 130px;
+height: 130px;
+border-radius: 10%;
+} */
+/* Reset */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+#background {
+  height: 725px;
+}
+
+body {
+  background-color: #fcfbfb;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the body fills the full viewport height */
+}
+
+/* Header */
+header {
+  width: 95%;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  display: flex;
+  justify-content: space-between; /* Align logo and nav */
+  align-items: center;
+  margin: 0 auto;
+  font-family: Bebas Neue;
+  font-size: 20px;
+  padding: 1cm;
+}
+
+/* Logo Styling */
+.logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 10%;
+}
+
+/* Navbar */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between; /* Align logo and nav items */
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 20px; /* Add some space between the logo and nav items */
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+  padding: 5px 10px;
+}
+
+nav a:link, nav a:visited {
+  color: #333;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #BAD9D3;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center; /* Center align footer content */
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;  /* Ensures footer spans the full width */
+  margin-top: auto; /* Push the footer to the bottom if there's not enough content */
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
