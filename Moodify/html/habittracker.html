@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dangrek&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+    <div id=""content">
+        <header>
+            <nav>
+                 <a id="logo_link" href="index.html">
+                    <img class="logo" src="/images/moodlogo.png" alt="Logo">
+                </a>
+                <a href="index.html">Home</a>
+                <a href="/html/moodtracker.html">Mood</a>
+                <a href="/html/habittracker.html">Habit</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+          </header>
+<body>
+     <div class="mainhabit">
+      <img class="habitlogo" src="/images/habit.png" alt="moodpagelogo" />
+      <button class="addhabit">Add A Habit</button>
+      <div id="habits-container"></div>
+    </div>
+
+    <footer>
+      <p>Moodify &copy; 2025 - Amanda Ericson</p>
+      <p><a href="/html/site-plan.html">Site Plan</a></p>
+      <p><a href="#">Contact Us</a></p>
+      <div class="social">
+        <a href="https://facebook.com">
+          <img src="/images/facebook.png" alt="fb icon" />
+        </a>
+        <a href="https://twitter.com">
+          <img src="/images/twitter.png" alt="twitter icon" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="/images/instagram.png" alt="instagram icon" />
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    let habitCount = 0;
+
+    document.querySelector('.addhabit').addEventListener('click', () => {
+      const habitName = prompt('Enter habit name:');
+      if (!habitName) return;
+
+      habitCount++;
+      const habitDiv = document.createElement('div');
+      habitDiv.classList.add('habit');
+
+      const title = document.createElement('div');
+      title.className = 'habit-title';
+      title.textContent = `Habit ${habitCount}: ${habitName}`;
+      habitDiv.appendChild(title);
+
+      const grid = document.createElement('div');
+      grid.className = 'days-grid';
+
+      for (let i = 1; i <= 365; i++) {
+        const day = document.createElement('div');
+        day.className = 'day-box';
+        day.title = `Day ${i}`;
+        day.addEventListener('click', () => {
+          day.classList.toggle('checked');
+        });
+        grid.appendChild(day);
+      }
+
+      habitDiv.appendChild(grid);
+      document.getElementById('habits-container').appendChild(habitDiv);
+    });
+  </script>
+</body>
+</html>

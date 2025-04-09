@@ -1,141 +1,60 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-#background{
-height: 725px;
-}
-body {
-    background-color: #fcfbfb;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-    align-items: center; 
-    text-align: center; 
-}
-header {
-    width: 95%;
-    height: 100px;
-    color: rgb(0, 0, 0);
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-family: Bebas Neue;
-    font-size: 20px;
-    padding: 1cm;
-}
-footer p a:hover {
-    text-decoration: underline;
-}    
-footer p {
-    font-size: 1.2em;
-  
-} 
-footer{
-color: black;
-background-color: white;
-display: flex;
-flex-direction: row;
-}
-nav {
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.2em;
-  width: 100%;
-  padding: 10px;
-  list-style-type: none;
-  display: flex;
-  width: span;
-}
-nav a {
-    text-align: center;
-    color: #fcfbfb;
-    text-decoration: none;
-} 
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-nav a:hover {
-    color: white;
-    background-color:#BAD9D3;
-}
-.logo{ 
-width: 130px;
-height: 130px;
-border-radius: 10%;
-} */
-/* Reset */
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
-/* Background */
 #background {
-  height: 725px;
+  height: 720px;
+  background-color: rgba(248, 235, 222, 0.653);
 }
 
 body {
-  background-color: #fcfbfb;
+  background-color: rgb(242, 246, 248);
   font-size: 22px;
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Make sure the body fills the full viewport height */
+  /* min-height: 100vh; */
+ max-width: 1400px;
+  margin-right: 100px;
 }
 
-/* Header */
+
 header {
-  width: 95%;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   color: rgb(0, 0, 0);
-  background-color: white;
-  display: flex;
-  justify-content: space-between; /* Align logo and nav */
+  background-color: rgb(242, 246, 248);
   align-items: center;
   margin: 0 auto;
   font-family: Bebas Neue;
   font-size: 20px;
   padding: 1cm;
+  
 }
 
-/* Logo Styling */
 .logo {
   width: 130px;
   height: 130px;
-  border-radius: 10%;
+  border-radius: 50%;
 }
 
-/* Navbar */
 nav {
-  background-color: white;
+  background-color: rgb(242, 246, 248);
   display: flex;
-  justify-content: space-between; /* Align logo and nav items */
+  flex-direction: row;
   align-items: center;
+  gap: 30px;
   width: 100%;
-  padding: 10px 20px;
+  font-family: "Arima", system-ui;
+  border-bottom: 2px dotted #333;
+  margin-bottom: 5px;
 }
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin-left: 20px; /* Add some space between the logo and nav items */
-}
-
 nav li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav a {
   text-decoration: none;
+  font-family: "Arima", system-ui;
   color: #333;
   font-size: 1.2em;
   padding: 5px 10px;
@@ -150,24 +69,229 @@ nav a:hover {
   background-color: #BAD9D3;
   border-radius: 5px;
 }
+section{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 20px;
+}
+.main{
+display: grid;
+grid-template-columns: 2fr 1fr;
+}
 
-/* Footer Styling */
+
+.aboutus{
+border: 10px solid #f2c9cc65;
+/* border-radius: 5%; */
+margin-left: 20px;
+z-index: 1;
+font-size: 20px;
+width: 500px;
+gap: 20px;
+padding: 10px;
+font-family: "Arima", system-ui;
+box-shadow: 10px 10px 30px #FFF6F7;
+line-height: 40px;
+font-size: 0.7cm;
+}
+img.design{
+width:550px;
+}
+.largelogo {
+  margin: 20px;
+  width: 400px;
+  border-radius: 25%;
+  height: auto;
+  background-color: transparent;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); /* Fade starts very early */
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%); /* Fade starts very early */
+}
+
+.dailyquote{
+width: 500px;
+border: 10px dotted  #F2BEA0 ;
+border-radius: 10%;
+margin: 20px;
+padding: 20px;
+font-family: "Madimi One", sans-serif;
+box-shadow: 10px 10px 20px #FFF6F7;
+}
+
+
 footer {
   color: black;
-  background-color: white;
+  background-color: rgb(242, 246, 248);
   display: flex;
-  justify-content: center; /* Center align footer content */
+  justify-content: center; 
   align-items: center;
-  padding: 20px 0;
-  width: 100%;  /* Ensures footer spans the full width */
-  margin-top: auto; /* Push the footer to the bottom if there's not enough content */
+  padding: 20px;
+  width: 100%;  
+  margin-top: 100px; 
+flex-direction: row;
+  border-top: 2px dotted #333; 
 }
 
 footer p {
   font-size: 1.2em;
+padding: 10px;
 }
 
 footer p a:hover {
-  text-decoration: underline;
+ color:#BAD9D3;
+}
+.social img{
+padding: 7px;
+margin: 10px;
+border-radius: 25%;
 }
 
+.begin{
+display: flex;
+flex-direction: row;}
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 80px;
+}
+
+.month-card {
+  border: 1px solid #ccc;
+  /* padding: 10px; */
+  text-align: center;
+  background-color: white;
+  position: relative; 
+  overflow: hidden; 
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr); /* 7 columns for each day of the week */
+  /* gap: 1px; */
+  padding-bottom: 5px;
+box-shadow: 10px 10px 20px #FFF6F7;
+}
+
+.month-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  grid-row: 1;
+  grid-column: 1 /span 7;
+font-family: "Arima", system-ui;
+}
+
+.day {
+font-size: 5px;
+/* width: 10px;
+height: 10px; */
+border: 1px solid black;
+cursor: pointer;
+/* border-radius: 50%; */
+}
+
+img.moodlogo {
+  width: 100%; /* Make it responsive within the card */
+  max-width: 400px; /* Optional: Limit maximum width */
+  height: auto;
+  display: block; /* Remove potential extra space below image */
+  background-color: transparent;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+}
+.colorkey{
+display: flex;
+flex-direction: row;}
+.emotion{
+font-size: 10px;
+font-weight: bold;
+border-radius: 50%;
+border: 0px transparent;
+height: 70px;
+width: 70px;
+margin: 10px;
+box-shadow: 10px 10px 10px #f7f0b456;
+
+}
+#happy{
+background-color: #F2BEA0;
+cursor: pointer;
+font-family: "Madimi One", sans-serif;}
+#sad{
+background-color: #BAD9D3;
+cursor: pointer;
+font-family: "Madimi One", sans-serif;
+}
+#angry{
+background-color: #f2d5df ;
+cursor: pointer;
+font-family: "Madimi One", sans-serif;}
+#depressed{
+background-color: rgb(253, 232, 155);
+cursor: pointer;
+font-family: "Madimi One", sans-serif;}
+#average{
+background-color: #f180f18e;
+cursor: pointer;
+font-family: "Madimi One", sans-serif;}
+
+    .mainhabit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+.habitlogo{
+  width: 100%; /* Make it responsive within the card */
+  max-width: 400px; /* Optional: Limit maximum width */
+  height: auto;
+  display: block; /* Remove potential extra space below image */
+  background-color: transparent;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%);
+}
+
+.addhabit{
+border: 2px solid black;
+border-radius: 50%;
+font-family:  "Arima", system-ui;
+font-size: 20px;
+margin: 20px;
+
+}
+    .habit {
+      margin-bottom: 30px;
+    }
+
+    .habit-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(30, 1fr);
+      gap: 3px;
+      margin-top: 10px;
+    }
+
+    .day-box {
+      width: 20px;
+      height: 20px;
+      background-color: #eee;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .day-box.checked {
+      background-color: #fabda3;
+    }
+.title{
+font-family:  "Arima", system-ui;
+font-size: 30px;}
+
+.hotline{
+font-family: "Madimi One", sans-serif;
+width: 700px;
+border: 10px dotted  #F2BEA0 ;
+}
