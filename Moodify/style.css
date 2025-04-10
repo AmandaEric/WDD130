@@ -295,3 +295,73 @@ font-family: "Madimi One", sans-serif;
 width: 700px;
 border: 10px dotted  #F2BEA0 ;
 }
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  header {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .logo,
+  .largelogo,
+  .habitlogo,
+  img.design {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutus,
+  .dailyquote,
+  .hotline {
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .month-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+  }
+
+  .colorkey {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emotion {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+  }
+
+  .days-grid {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
